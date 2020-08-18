@@ -1,7 +1,7 @@
 # html-css-movie-page-s-assignment-KrisztinaPap
 
 ## Title
-Krisztina's favourite movies
+Krisztina's Three Favourite Movies
 
 ## Purpose
 To practice basic HTML and CSS skills
