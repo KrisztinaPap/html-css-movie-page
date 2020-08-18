@@ -1,15 +1,29 @@
+/* 
+* Google Fonts: Lobster Regular
+* @link https://fonts.google.com/specimen/Lobster?query=lobster&sidebar.open=true
+*/
+
+@font-face {
+    font-family: 'Lobster Regular';
+    src: url(../fonts/lobster/Lobster-Regular.ttf);
+    src: url(../fonts/lobster/Lobster-Regular.ttf)
+        format( 'truetype' );
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
-    max-width: 900px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-  
 }
 
 html {
-    font-size: 24px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
 }
 figure {
     float: left;
@@ -61,9 +75,9 @@ li {
 nav a {
     display: inline-block;
     color: whitesmoke;
-    text-transform: uppercase;
+  
     text-decoration: none;
-    padding: 14px;
+    padding: 14px 30px;
     text-align: center;
 }
 
@@ -77,10 +91,14 @@ h1 {
     margin-bottom: 2rem;
     text-transform: uppercase;
     text-align: center;
+    font-family: 'Lobster Regular', 'Montserrat', sans-serif;
 }
 
 h2 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 footer {
