@@ -205,3 +205,16 @@ input[type=text], select, textarea {
     background-color: whitesmoke;
     padding: 20px;
   }
+
+  @media screen and ( min-width: 800px ) {
+      figure {
+          float: left;
+          margin-left: 25px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+  }
