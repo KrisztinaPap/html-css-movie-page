@@ -140,6 +140,10 @@ footer a {
     color: whitesmoke;
 }
 
+#movie-info {
+    padding-top: 2rem;
+}
+
 /* link@ 
  Text meant only for screen readers. */
 .screen-reader-text {
@@ -170,4 +174,31 @@ footer a {
     width: auto;
     z-index: 100000; /* Above WP toolbar. */
   }
+
+  /*
+   * Media Queries
+   */
+
+   @media screen and ( min-width: 800px ) {
+    
+        main {
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+        }
+
+        h1,
+        h3,
+        #movie-summary {
+            width: 100%;
+        }
+
+        figure {
+            width: 40%;
+        }
+
+        #movie-info {
+            width: 50%;
+        }
+   }
 
