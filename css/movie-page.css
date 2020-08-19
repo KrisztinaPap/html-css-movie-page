@@ -99,7 +99,7 @@ nav a.icon {
  */   
 .active {
     background-color: darkslategrey;
-    color: white;
+    color: whitesmoke;
   }
 
 h1 {
@@ -159,10 +159,10 @@ footer a {
     word-wrap: normal !important;
   }
   .screen-reader-text:focus {
-    background-color: #eee;
+    background-color: whitesmoke;
     clip: auto !important;
     clip-path: none;
-    color: #444;
+    color: darkslategrey;
     display: block;
     font-size: 1em;
     height: auto;
