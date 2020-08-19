@@ -7,44 +7,72 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&display=swap" rel="stylesheet"> 
+    
+    <!--
+        Citation:
+        https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+        "Hamburger menu" / "Bar icon" to toggle the navigation links
+        Loads a hamburger menu icon from the Font Awesome library 
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/movie-page.css">
 
     <script src="js/scripts.js" defer></script>
 </head>
-<body class="movie-background">
+<body>
     <header> 
         <h2 class="screen-reader-text">Main Menu</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Maverick</a></li>
-                <li><a href="definitely-maybe.html">Definitely, maybe</a></li>
-                <li><a href="revolution.html">Revolution</a></li>
-            </ul>
-        </nav>  
-    </header>
-    <main class="movie-textbox">
-        <div>
+        <nav class="myNav">
             <div>
-                <h1>Maverick</h1>
-                <ul>
-                    <li>Director: Richard Donner</li>
-                    <li>Writers: Roy Huggins, William Goldman</li>
-                </ul>
-                <ul>
-                    <li>Cast:</li>
-                    <li>Mel Gibson</li>
-                    <li>Jodie Foster</li>
-                    <li>James Garner</li>
-                </ul>
-                <p >Click <a href="https://www.imdb.com/title/tt0110478/?ref_=nv_sr_srsg_6" target="_blank">here</a> to visit IMDB's Maverick page.</p>
+                <a href="#" class="active">Maverick</a>
+                <!--
+                    Citation:
+                    https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+                    In the below line of code the 'active' class is necessary or the JavaScript function cannot toggle
+                --> <div id="mainMenu">
+                        <a href="index.html">Home</a>
+                        <a href="definitely-maybe.html">Definitely, maybe</a>
+                        <a href="revolution.html">Revolution</a>
+                    </div>
+                
+                <!--
+                    Citation:
+                    https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+                    "Hamburger menu" / "Bar icon" to toggle the navigation links
+                    The below two lines of code are an anchor that shows up as the hamburger menu from the Font Awesome library. IT is set up so when clicked, the JavaScript function 'myMenu' will run.
+                --> 
+                <a href="javascript:void(0);" class="icon" onclick="myMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
+        </nav>   
+    </header>
+    <main class="container">  
+        <div>
+            <h1>Maverick</h1>
+            <ul>
+                <li>Director: Richard Donner</li>
+                <li>Writers: Roy Huggins, William Goldman</li>
+            </ul>
+            <ul>
+                <li>Cast:</li>
+                <li>Mel Gibson</li>
+                <li>Jodie Foster</li>
+                <li>James Garner</li>
+            </ul>
+            <figure>
+                <img src="img/maverick.PNG" alt="A movie poster for Maverick.">
+                <figcaption>Maverick (1994)</figcaption>
+            </figure>
+            <h3>Plot Summary:</h3>
+            <p>Bret Maverick, needing money for a poker tournament, faces various comic mishaps and challenges, including a charming woman thief. (imdb.com)</p>
+            <p >Click <a href="https://www.imdb.com/title/tt0110478/?ref_=nv_sr_srsg_6" target="_blank">here</a> to visit IMDB's Maverick page.</p>
         </div>
     </main>
     <footer>
-        <p>&copy; Krisztina Pap, 2020</p>
-        <p>Pictures, descriptions, and other info are borrowed from https://www.imdb.com</p>
+        <span>&copy; Krisztina Pap, 2020</br>
+        Pictures, descriptions, and other info are borrowed from <a href="https://www.imdb.com">IMDB.com</a></span>
     </footer>
 </body>
 </html>
