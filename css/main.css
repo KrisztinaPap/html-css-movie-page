@@ -45,9 +45,6 @@ div > p {
     padding: 1rem;
    
 }
-.clear {
-    clear: both;
-}
 
 section div {
     display: flex;
@@ -65,38 +62,53 @@ a img:hover {
     box-shadow: 5px 10px;
 }
 
-nav {
+.myNav {
+    overflow: hidden;
     background-color: darkslategrey;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: relative;
 }
 
-nav ul {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+/* Citation:
+ *  https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+ *  'mainMenu' links have to be hidden while the hamburger menu shows instead.
+ */    
+.myNav #mainMenu {
     list-style-type: none;
-}
-
-nav li {
-    display: block;
-    float: left;
-
+    display: none;
 }
 
 nav a {
-    display: inline-block;
+    display: block;
     color: whitesmoke;
     text-decoration: none;
     padding: 14px 30px;
-    text-align: center;
+  
 }
 
 nav a:hover {
-    background-color: whitesmoke;
-    color: darkslategrey;
+    color: whitesmoke;
 }
+
+/* Citation:
+ *  https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+ *  The below code block styles the Font Awesome (hamburger menu) icon.
+ */   
+nav a.icon {
+    background: darkslategrey;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Citation:
+ *  https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+ *  The active element in the menu is styled in the active class below
+ */   
+.active {
+    background-color: darkslategrey;
+    color: white;
+  }
 
 h1 {
     margin-top: 4rem;
@@ -123,27 +135,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.movie-background {
-    background-image: url("/img/brick-wall-backdrop.jpg");
-    background-size: cover;
-    height: 100vh;
-}
-
-.movie-textbox {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.movie-textbox ul {
-    text-decoration: none;
-    list-style-type: none;
-    padding-top: 1rem;
 }
 
 /* link@ 

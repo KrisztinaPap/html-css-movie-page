@@ -1,0 +1,179 @@
+/* 
+* Google Fonts: Lobster Regular
+* @link https://fonts.google.com/specimen/Lobster?query=lobster&sidebar.open=true
+*/
+
+@font-face {
+    font-family: 'Lobster Regular';
+    src: url(../fonts/lobster/Lobster-Regular.ttf);
+    src: url(../fonts/lobster/Lobster-Regular.ttf)
+        format( 'truetype' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+}
+figure {
+    float: left;
+    margin: 1rem;
+    /* text-align: center; */
+}
+
+figcaption {
+    margin: 0.6rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+div > p {
+    margin: 1rem;
+    padding: 1rem;
+   
+}
+.clear {
+    clear: both;
+}
+
+section div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 200px;
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+}
+
+a img:hover {
+    box-shadow: 5px 10px;
+}
+
+nav {
+    background-color: darkslategrey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+nav li {
+    display: block;
+    float: left;
+
+}
+
+nav a {
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 14px 30px;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: whitesmoke;
+    color: darkslategrey;
+}
+
+h1 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Lobster Regular', 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    background-color: darkslategrey;
+    color: whitesmoke;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.movie-background {
+    background-image: url("/img/brick-wall-backdrop.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.movie-textbox {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.movie-textbox ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding-top: 1rem;
+}
+
+/* link@ 
+ Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+  }
+  .screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+  }
+

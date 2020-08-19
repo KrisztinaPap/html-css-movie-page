@@ -16,6 +16,7 @@ August 18, 2020
 - [The Internet Movie Database: movie posters, descriptions, and other info](https://www.imdb.com)
 - [Pixabay.com: Brick wall image](https://pixabay.com/photos/backdrop-block-brick-building-21534/)
 - [WordPress 'screen-reader-text' CSS](https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/)
+- [w3schools: Mobile Menu](https://www.w3schools.com/howto/howto_js_mobile_navbar.asp)
 
 ## Trello Project Board
 https://trello.com/b/yVFg18CI/html-css-movie-pages-assignment
