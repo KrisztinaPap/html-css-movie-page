@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolution</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&display=swap" rel="stylesheet"> 
+    
+    <!--
+        Citation:
+        https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+        "Hamburger menu" / "Bar icon" to toggle the navigation links
+        Loads a hamburger menu icon from the Font Awesome library 
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/movie-page.css">
+
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header> 
+        <h2 class="screen-reader-text">Main Menu</h2>
+        <nav class="myNav">
+            <div>
+                <a href="#" class="active">Revolution</a>
+                <!--
+                    Citation:
+                    https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+                    In the below line of code the 'active' class is necessary or the JavaScript function cannot toggle
+                --> <div id="mainMenu">
+                        <a href="index.html">Home</a>
+                        <a href="maverick.html">Maverick</a>
+                        <a href="definitely-maybe.html">Definitely, maybe</a>
+                    </div>
+                
+                <!--
+                    Citation:
+                    https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+                    "Hamburger menu" / "Bar icon" to toggle the navigation links
+                    The below two lines of code are an anchor that shows up as the hamburger menu from the Font Awesome library. IT is set up so when clicked, the JavaScript function 'myMenu' will run.
+                --> 
+                <a href="javascript:void(0);" class="icon" onclick="myMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>   
+    </header>
+    <main class="container">  
+        <h1>Revolution</h1>
+        <figure>
+            <img src="img/revolution.PNG" alt="A movie poster for Revolution.">
+            <figcaption>Revolution (2012)</figcaption>
+        </figure>
+        <div id="movie-info">
+            <p>
+                Creator: Eric Kripke
+            </p>
+            <p><strong>Cast:</strong></p>
+            <ul>
+                <li>Billy Burke</li>
+                <li>Tracy Spiridakos</li>
+                <li>Giancarlo Esposito</li>
+            </ul>
+        </div>
+        <div id="movie-summary">
+            <h3>Plot Summary:</h3>
+            <p>Fifteen years after a permanent global blackout, a group of revolutionaries seeks to drive out an occupying force posing as the United States Government. (imdb.com)</p>
+            <p >Click <a href="https://www.imdb.com/title/tt2070791/?ref_=nv_sr_srsg_6" target="_blank">here</a> to visit IMDB's Revolution page.</p>
+        </div>
+    </main>
+    <footer>
+        <span>&copy; Krisztina Pap, 2020</br>
+        Pictures, descriptions, and other info are borrowed from <a href="https://www.imdb.com">IMDB.com</a></span>
+    </footer>
+</body>
+</html>
