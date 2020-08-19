@@ -14,11 +14,14 @@
 
 * {
     box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 html {
@@ -62,17 +65,24 @@ a img:hover {
     box-shadow: 5px 10px;
 }
 
-nav ul {
+nav {
     background-color: darkslategrey;
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+nav ul {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     list-style-type: none;
 }
 
 nav li {
     display: block;
     float: left;
+
 }
 
 nav a {
@@ -122,14 +132,11 @@ footer {
 }
 
 .movie-textbox {
-    max-width: 1000px;
-    width: 100vw;
-    position: fixed;
-    top: 20%;
-   
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
     background-color: #ffffff;
-    opacity: 0.9;
-    border-radius: 10px;
     text-align: center;
 }
 
