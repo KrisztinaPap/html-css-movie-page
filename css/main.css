@@ -28,28 +28,15 @@ html {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 20px;
 }
+
 figure {
-    float: left;
-    margin: 1rem;
-    /* text-align: center; */
+    text-align: center;
 }
 
 figcaption {
     margin: 0.6rem;
     font-size: 0.8rem;
     text-align: center;
-}
-
-div > p {
-    margin: 1rem;
-    padding: 1rem;
-   
-}
-
-section div {
-    display: flex;
-    align-content: center;
-    justify-content: center;
 }
 
 img {
@@ -60,6 +47,7 @@ img {
 
 a img:hover {
     box-shadow: 5px 10px;
+    color: darkslategrey;
 }
 
 .myNav {
@@ -111,18 +99,27 @@ nav a.icon {
   }
 
 h1 {
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Lobster Regular', 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 h2 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 1rem;
+    font-family: 'Lobster Regular', 'Montserrat', sans-serif;
+    padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+h3 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;  
+}
+
+p {
+    margin-bottom: 2rem;
 }
 
 footer {
@@ -131,10 +128,12 @@ footer {
     background-color: darkslategrey;
     color: whitesmoke;
     padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    position: fixed;
-    bottom: 0;
+    padding-bottom: 0.4rem;
     width: 100%;
+}
+
+footer a {
+    color: whitesmoke;
 }
 
 /* link@ 
